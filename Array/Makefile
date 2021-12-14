@@ -1,7 +1,12 @@
-CC=g++
+CC = g++
+CFLAGS = -g -Wall
 
 all:
-	${CC} main.cpp -o main
-run:
+	$(CC) $(CFLAGS) main.cpp -o main
+
+run: all
 	./main
+
+clean:
+	rm -f *.o main
 

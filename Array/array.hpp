@@ -3,7 +3,7 @@
 
 #include <cstddef>
 
-template <typename T, std::size_t S> 
+template <typename T, int S> 
 class Array {
 public:
     typedef T* iterator;
@@ -12,7 +12,7 @@ public:
 public:
     Array() {};
 
-    constexpr std::size_t size() const {
+    constexpr int size() const {
         return S; 
     }
 
@@ -40,11 +40,11 @@ public:
         return data_;
     }
 
-    T& operator [](std::size_t index) {
+    T& operator [](int index) {
         return data_[index];
     }
 
-    const T& operator [](std::size_t index) const {
+    const T& operator [](int index) const {
         return data_[index];
     }
 
