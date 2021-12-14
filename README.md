@@ -1,4 +1,4 @@
-# data_structures
+# Data Structures
 
 One of my favorite ways to learn a language is to code a data structure.
 Data structures usually require a good knowledge of memory management,
